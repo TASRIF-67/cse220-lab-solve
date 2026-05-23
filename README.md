@@ -13,7 +13,6 @@ Solutions to all CSE220 (Data Structures) lab problems, implemented in both **Ja
 cse220-lab/
 ├── python-solve/
 ├── java-solve/
-└── ...
 ```
 
 ---
