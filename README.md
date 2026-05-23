@@ -10,7 +10,7 @@ Solutions to all CSE220 (Data Structures) lab problems, implemented in both **Ja
 ## Repository Structure
 
 ```
-cse220-lab/
+cse220-lab-solve/
 ├── python-solve/
 ├── java-solve/
 ```
@@ -21,6 +21,9 @@ cse220-lab/
 
 | Lab | Topic |
 |-----|-------|
+| Lab 1 | 2D Matrix Operations |
+| Lab 2 | Singly Linked List |
+| Lab 3 | Doubly Linked List |
 | Lab 1 | 2D Matrix Operations |
 
 ---
