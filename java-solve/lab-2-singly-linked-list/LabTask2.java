@@ -1,17 +1,40 @@
 // LabTask2: Word Decoder
 public class LabTask2 {
     
-    // No need to submit this task
+    static int countNodes(Node head) {
+        Node temp = head;
+        int count = 0;
+
+        while (temp != null) {
+            count += 1;
+            temp = temp.next;
+        }
+
+        return count;
+    }
+
     public static Node wordDecoder( Node head ){
+        int numNodes = countNodes(head);
+        int idx = 13 % numNodes;
+        int currIdx = 0;
+        Node temp = head;
+        Node newHead = null;
+
+        while (temp != null) {
+            if (currIdx !=  0 && currIdx % idx == 0) {
+                Node newNode = new Node(temp.elem);
+                newNode.next = newHead;
+                newHead = newNode;
+            }
+            currIdx++;
+            temp = temp.next;
+        }
+
+        Node dummy = new Node(null);
+        dummy.next = newHead;
+
+        return dummy;
         
-        //You're suppose to create a new Dummy headed Singly Linked List in this method
-        //Dummy head is basically a head Node where the elem is null
-        // Node dHead = new Node(null, null); here the dHead is a Dummy Head
-
-        //TO DO
-
-        //remove the following line when you're ready to return the new head
-        return null;
     }
 
     //NOTE: if you find any issue with the driver code please inform AIB

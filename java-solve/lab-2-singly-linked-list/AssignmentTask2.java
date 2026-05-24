@@ -1,13 +1,49 @@
 // AssignmentTask2: Organize Books
 import java.util.Arrays;
 public class AssignmentTask2{
+
+    
     
     // MUST SUBMIT this method
     public static Node organizeBooks(Node head, Integer[] popularity) {
-        
-        //TO DO
+        if (head == null || head.next == null ) {
+            return head;
+        }
 
-        return null; // Remove this when you're ready to return the new head
+        Node curr1 = head;
+        int i = 0;
+        
+        while (curr1 != null) {
+            Node maxNode = curr1;
+            int maxIdx = i;
+            Node curr2 = curr1.next;
+            int j = i + 1;
+
+            while (curr2 != null) {
+                if (popularity[j] > popularity[maxIdx]) {
+                    maxNode = curr2;
+                    maxIdx = j;
+                }
+                curr2 = curr2.next;
+                j++;
+            }
+
+            //Swap elems in list
+            Object temp = curr1.elem;
+            curr1.elem = maxNode.elem;
+            maxNode.elem = temp;
+
+            //Swap elems in arr
+            int temp2 = popularity[i];
+            popularity[i] = popularity[maxIdx];
+            popularity[maxIdx] = temp2;
+
+            i++;
+            curr1 = curr1.next;
+
+        }
+
+        return head; 
     }
 
     //NOTE: if you find any issue with the driver code please inform AIB
