@@ -24,7 +24,7 @@ cse220-lab-solve/
 | Lab 1 | 2D Matrix Operations |
 | Lab 2 | Singly Linked List |
 | Lab 3 | Doubly Linked List |
-| Lab 1 | 2D Matrix Operations |
+| Lab 5.1 | Binary Tree |
 
 ---
 
