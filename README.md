@@ -24,7 +24,10 @@ cse220-lab-solve/
 | Lab 1 | 2D Matrix Operations |
 | Lab 2 | Singly Linked List |
 | Lab 3 | Doubly Linked List |
+| Lab 4.1 | Hashing & Hashmap
+| Lab 4.2 | Stack and Queue
 | Lab 5.1 | Binary Tree |
+| Lab 5.2 | BST
 
 ---
 
